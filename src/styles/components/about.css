@@ -1,0 +1,66 @@
+/* ABOUT */
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-btn {
+    text-decoration: none;
+    color: var(--text-color);
+    opacity: 0.5;
+    border-bottom: 3px solid var(--accent-color);
+    padding: 0.5rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.about-btn:hover {
+    transform: scale(1.02);
+    border-color: var(--border-color);
+}
+
+.line {
+    border: 3px solid var(--accent-color);
+    background-color: #e2e8f0;
+    height: 3px;
+    width: 50px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.logo:hover {
+    transform: translateY(-4px);
+    color: var(--muted-text);
+}
+
+@media (min-width: 1000px) {
+    #about {
+        text-align: left;
+        padding: 0 2rem;
+    }
+
+    .about-me {
+        justify-content: flex-start;
+    }
+
+    .about-btn {
+        margin-bottom: 2rem;
+    }
+
+    .skills {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,36 @@
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem 1.5rem;
+}
+
+section {
+    margin-top: 100px;
+}
+
+.project-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    margin: 1.5rem 0;
+    color: var(--muted-text);
+}
+
+@media (min-width: 1000px) {
+
+    header,
+    main,
+    footer {
+        max-width: 1440px;
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+
+    .info {
+        max-width: 700px;
+    }
+}
