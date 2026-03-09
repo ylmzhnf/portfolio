@@ -8,15 +8,11 @@ header {
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid var(--border-color);
-
+    padding: 1rem;
 }
 
 [data-theme="light"] header {
     background-color: rgba(248, 250, 252, 0.85);
-}
-
-nav {
-    display: flex;
 }
 
 .navbar {
@@ -25,13 +21,17 @@ nav {
     margin: 0;
     padding: 0;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .navbar a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
+    font-size: 1rem;
     transition: color 0.2s ease;
+    padding: 0.5rem 1rem;
+
 }
 
 .navbar a:hover {
@@ -61,17 +61,12 @@ nav {
     color: var(--accent-color);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     header {
-        padding: 1rem;
-    }
-
-    .navbar {
-        gap: 2rem;
+        padding: 0;
     }
 
     .navbar a {
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 }

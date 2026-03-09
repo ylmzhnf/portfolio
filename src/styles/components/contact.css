@@ -1,12 +1,21 @@
 /* Contact Section */
 #contact {
-    padding: 4rem 2rem;
+    padding: 4rem 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr;
+    gap: 3rem;
     align-items: center;
+}
+
+#contact .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    display: inline-block;
+    border-radius: 2px;
+
 }
 
 .contact {
@@ -23,23 +32,23 @@
     line-height: 1.6;
 }
 
-form {
+#contact form {
     background-color: var(--card-bg);
-    padding: 2.5rem;
+    padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
 }
 
-label {
+#contact label {
     display: block;
     margin-bottom: 0.5rem;
     color: var(--text-color);
     font-weight: 500;
 }
 
-input,
-textarea {
+#contact input,
+#contact textarea {
     width: 100%;
     padding: 0.75rem;
     margin-bottom: 1.5rem;
@@ -52,8 +61,8 @@ textarea {
     transition: border-color 0.2s ease;
 }
 
-input:focus,
-textarea:focus {
+#contact input:focus,
+#contact textarea:focus {
     outline: none;
     border-color: var(--accent-color);
     box-shadow: 0 0 0 2px rgba(255, 180, 0, 0.1);
@@ -77,15 +86,14 @@ textarea:focus {
     opacity: 0.9;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     #contact {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        padding: 4rem 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        padding: 4rem 2rem;
     }
 
-    form {
-        padding: 1.5rem;
+    #contact form {
+        padding: 2.5rem;
     }
 }

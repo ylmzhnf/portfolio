@@ -1,13 +1,14 @@
+/* Hero Section */
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     min-height: 80vh;
-    padding:6rem 1.5rem 4rem 1.5rem;
+    padding: 10rem 1.5rem 3rem 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
-    
 }
 
 .hero h1 {
@@ -37,14 +38,14 @@
 }
 
 .hero .info {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--muted-text);
     max-width: 600px;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
 
-.project-btn {
+.hero .project-btn {
     display: inline-block;
     padding: 1rem 2rem;
     background-color: var(--accent-color);
@@ -56,7 +57,7 @@
     margin-bottom: 2rem;
 }
 
-.project-btn:hover {
+.hero .project-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -84,21 +85,21 @@
     font-size: 2rem;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .hero {
         align-items: flex-start;
         text-align: left;
-        padding: 8rem 2rem 4rem 2rem;
+        padding: 6rem 1.5rem 4rem 1.5rem;
     }
 
     .hero h1 {
         font-size: 4rem;
     }
-    
+
     .hero .info {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
+
     .social-link ul {
         justify-content: flex-start;
     }

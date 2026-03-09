@@ -1,10 +1,13 @@
-/* Footer */
+/*Footer */
 footer {
     padding: 2rem;
     background-color: var(--card-bg);
     border-top: 1px solid var(--border-color);
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: center;
     align-items: center;
     margin-top: 4rem;
 }
@@ -15,29 +18,11 @@ footer p {
     margin: 0;
 }
 
-footer .social-link ul {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer .social-link a {
-    color: var(--text-color);
-    font-size: 1.25rem;
-    transition: color 0.2s ease;
-}
-
-footer .social-link a:hover {
-    color: var(--accent-color);
-}
-
-/* Responsive */
-@media (max-width: 600px) {
+@media (min-width: 768px) {
     footer {
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
+        flex-direction: row;
+        gap: 0;
+        text-align: left;
+        justify-content: space-around;
     }
 }

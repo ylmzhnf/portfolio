@@ -1,17 +1,19 @@
-/* About Section */
+/*About Section */
 #about {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .about-me {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.line {
+#about .line {
   width: 60px;
   height: 4px;
   background-color: var(--accent-color);
@@ -19,8 +21,8 @@
   border-radius: 2px;
 }
 
-.sub-title {
-  font-size: 2rem;
+#about .sub-title {
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--text-color);
   margin: 0;
@@ -72,7 +74,7 @@
   background-color: var(--card-bg);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  padding: 1.25rem;
+  padding: 1.5rem;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -120,19 +122,12 @@
   font-weight: 500;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .about-me {
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .skills .sub-title {
-    font-size: 1.7rem;
+@media (min-width: 768px) {
+  #about .sub-title {
+    font-size: 2rem;
   }
 
   .bento-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 }

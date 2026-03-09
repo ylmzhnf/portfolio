@@ -4,7 +4,14 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+#projects .line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+  display: inline-block;
+  border-radius: 2px;
 
+}
 .project {
     display: flex;
     align-items: center;
@@ -106,7 +113,6 @@
     color: var(--text-color);
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     #projects {
         padding: 4rem 2rem;
