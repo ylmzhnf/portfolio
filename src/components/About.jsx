@@ -54,10 +54,16 @@ function About() {
         <h2 className="sub-title">About Me</h2>
       </div>
       <p className="info">
-        Hi, I'm Hanife — a front-end developer passionate about clean and
-        minimal design. I love building websites that are simple, elegant, and
-        easy to use. Right now, I’m focusing on improving my JavaScript and
-        full-stack skills to create more dynamic and interactive projects.
+        I’m a Junior Full Stack Software Engineer, actively improving my
+        development skills by building real-world, production-oriented projects.
+        I primarily work with Next.js, NestJS, PostgreSQL, Prisma, and Docker,
+        and I continue learning by integrating testing, AWS, and AI-powered
+        features into my applications. My focus is on understanding how frontend
+        and backend systems work together in real usage scenarios. Rather than
+        relying only on courses or tutorials, I aim to grow by solving real
+        problems through hands-on projects, gaining a deeper understanding of
+        system architecture, data modeling, and application behavior in
+        practice.
       </p>
       <a
         className="about-btn"
